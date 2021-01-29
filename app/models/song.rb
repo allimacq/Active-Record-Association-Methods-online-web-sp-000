@@ -12,7 +12,7 @@ class Song < ActiveRecord::Base
     else
       drake = Arist.find_by(name: "Drake")
     end
-    #self.artist = drake
+    self.artist = drake
     
     # when this method is called it should assign the song's artist to Drake
     # Drake doesn't exist in the database as an artist yet, so you'll have to create a record
